@@ -134,8 +134,8 @@ var WebsiteApp = function() {
      *  Start the server (starts up the sample application).
      */
     self.start = function() {
-        app.use('/static', express.static(__dirname + '/public'));
-        
+        self.app.use('/static', express.static(__dirname + '/public'));
+
         //  Start the app on the specific interface (and port).
         self.app.listen(self.port, self.ipaddress, function() {
             console.log('%s: Node server started on %s:%d ...',
