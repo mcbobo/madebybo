@@ -1,2 +1,0 @@
-# madebybo
-My Personal Website
