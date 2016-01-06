@@ -15,7 +15,7 @@
   "homepage": "http://www.madebybo.com/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mcbobo/madebybo.git"
+    "url": "ssh://568d1a1a7628e18ec0000045@resume-bosprojects.rhcloud.com/~/git/resume.git/"
   },
 
   "engines": {
