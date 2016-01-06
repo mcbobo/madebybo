@@ -1,11 +1,11 @@
 {
   "name": "Made-By-Bo",
-  "version": "0.0.0",
-  "description": "Bo's Personal Website",
+  "version": "0.0.1",
+  "description": "Personal Website",
   "keywords": [
     "OpenShift",
     "Node.js",
-    "application",
+    "application"
   ],
   "author": {
     "name": "Bo Li",
