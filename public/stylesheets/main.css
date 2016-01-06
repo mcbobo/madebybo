@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'ostrich_sansmedium';
+    src: url('/fonts/ostrich-regular-webfont.eot');
+    src: url('/fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/ostrich-regular-webfont.woff2') format('woff2'),
+         url('/fonts/ostrich-regular-webfont.woff') format('woff'),
+         url('/fonts/ostrich-regular-webfont.ttf') format('truetype'),
+         url('/fonts/ostrich-regular-webfont.svg#ostrich_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: 'ostrich_sansmedium';
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-image: url('http://i.imgur.com/zmY0rWQ.jpg');
+    background-position: center center;
+    background-size: canvas;
+}
+
+#mainOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+
+#mainOverlay > img {
+    width: 40%;
+    display: inline-block;
+    margin: 5% 0 0 0;
+}
+
+#mainOverlay > img:first-child {
+    margin: 0 2% 0 6%;
+}
