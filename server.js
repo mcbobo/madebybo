@@ -97,7 +97,12 @@ var WebsiteApp = function() {
 
         self.routes['/'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
-            res.send(self.cache_get('index.html') );
+            res.send(self.cache_get('index.html'));
+        };
+
+        self.routes['/resume'] = function(req, res) {
+            res.setHeader('Content-Type', 'text/html');
+            res.send(fs.readFileSync('./resume.html'));
         };
     };
 
@@ -134,7 +139,7 @@ var WebsiteApp = function() {
      *  Start the server (starts up the sample application).
      */
     self.start = function() {
-        self.app.use('/static', express.static(__dirname + '/public'));
+        self.app.use(express.static(__dirname + '/public'));
 
         //  Start the app on the specific interface (and port).
         self.app.listen(self.port, self.ipaddress, function() {
