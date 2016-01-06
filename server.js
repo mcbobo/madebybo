@@ -7,7 +7,7 @@ var fs      = require('fs');
 /**
  *  Define the sample application.
  */
-var SampleApp = function() {
+var WebsiteApp = function() {
 
     //  Scope.
     var self = this;
@@ -134,6 +134,8 @@ var SampleApp = function() {
      *  Start the server (starts up the sample application).
      */
     self.start = function() {
+        app.use('/static', express.static(__dirname + '/public'));
+        
         //  Start the app on the specific interface (and port).
         self.app.listen(self.port, self.ipaddress, function() {
             console.log('%s: Node server started on %s:%d ...',
@@ -148,7 +150,8 @@ var SampleApp = function() {
 /**
  *  main():  Main code.
  */
-var zapp = new SampleApp();
-zapp.initialize();
-zapp.start();
+var app = new WebsiteApp();
+app.initialize();
+app.start();
+
 
