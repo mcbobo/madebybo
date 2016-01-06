@@ -40,10 +40,11 @@ html, body {
     width: 40%;
     display: inline-block;
     margin: 5% 0 0 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
 #mainOverlay > img:first-child {
-    margin: 0 2% 0 6%;
+    margin: 0 2% 0 9%;
 }
 
 #mainWrap {
